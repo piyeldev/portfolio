@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Space+Grotesk:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+html,
+body {
+	max-width: 100vw;
+	/* overflow-x: hidden; */
+}
+.play-bold,
+h1,
+h2,
+h3 {
+	font-family: 'Play', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+img {
+	@apply object-scale-down;
+}
+h2 {
+	@apply text-4xl;
+}
+.nav-font-size {
+	@apply text-[20px];
+}
+
+p {
+	@apply lg:text-[24px] md:text-[20px] text-[16px];
+}
+.source-code-pro {
+	font-family: 'Source Code Pro', monospace;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.source-code-pro-light {
+	font-family: 'Source Code Pro', monospace;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+}
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
+* {
+	font-family: 'Space Grotesk', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 24px;
+
+	scroll-behavior: smooth;
+}
+
+.space-font {
+	font-family: 'Space Grotesk', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.space-font-bold {
+	font-family: 'Space Grotesk', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: bold;
+	font-style: normal;
+}
+.animate-enlarge {
+	transition: transform 0.3s;
+}
+
+.animate-enlarge:hover {
+	transform: scale(1.2);
+}
+
+.drag-none {
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+	border-radius: 5px;
+	box-shadow: none;
+}
+::-webkit-scrollbar-thumb {
+	background: #8a8a8a;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.card-shadow {
+	box-shadow: 9px 4px 14.8px 6px rgba(0, 0, 0, 0.25);
+}
+
+.title-card-shadow {
+	box-shadow: 5px 4px 14.8px 6px rgba(0, 0, 0, 0.25);
+}
+.title-shadow {
+	box-shadow: -5px 4px 11.98px 0px rgba(0, 0, 0, 0.25);
+}
+
+.hd {
+	@apply sm:text-base text-sm;
+}
+
+#hero {
+	background-image: url('lib/assets/heroBg.png');
+	background-size: cover;
+}

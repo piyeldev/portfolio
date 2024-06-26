@@ -1,0 +1,45 @@
+<script>
+	import heroBg from '$lib/assets/heroBg.png';
+	import img from '$lib/assets/img.png';
+	import GetInTouchBtn from './GetInTouchBtn.svelte';
+</script>
+
+<section id="hero" class="h-screen overflow-x-hidden flex items-center justify-center">
+	<div class="grid h-full">
+		<div
+			class="col-start-1 row-start-1 h-full grid lg:px-20 md:px-12 px-4 w-full box-border justify-center"
+		>
+			<div class="col-start-1 row-start-1 h-full flex justify-center items-end sm:pb-8 pb-4">
+				<div
+					class=" size-10 bg-[#2B5BA5] flex justify-center items-center rounded-full animate-bounce"
+				>
+					<i class="fa-solid fa-arrow-down text-white z-10"></i>
+				</div>
+			</div>
+			<div
+				class="flex md:flex-row flex-col justify-center sm:items-center w-fit col-start-1 row-start-1 xl:gap-28 lg:gap-20 gap-6"
+			>
+				<div class="left-el text-left mx-2 sm:mx-0">
+					<h1
+						class="header text-white xl:text-[70px] lg:text-[60px] md:text-[50px] text-[40px] leading-8 md:leading-10"
+					>
+						Hi! I'm Fiel
+					</h1>
+					<p class="text-white font-light">I'm a student, young, and passionate</p>
+					<div
+						class="font-bold sm:text-[44px] text-[30px] text-white md:mt-5 mt-0 sm:leading-8 leading-6"
+					>
+						Mobile App Developer
+					</div>
+					<p class="text-white font-light pb-4">
+						- that transforms your ideas into a working magic!
+					</p>
+					<GetInTouchBtn />
+				</div>
+				<div class="right-el flex items-center xl:lg:size-90 size-50 md:mx-0 sm:mx-32 mx-2">
+					<img src={img} alt="dev" class="drag-none" />
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
