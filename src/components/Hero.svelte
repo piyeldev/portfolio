@@ -2,10 +2,12 @@
 	import heroBg from '$lib/assets/heroBg.png';
 	import img from '$lib/assets/img.png';
 	import GetInTouchBtn from './GetInTouchBtn.svelte';
+
+	
 </script>
 
-<section id="hero" class="h-screen overflow-x-hidden flex items-center justify-center">
-	<div class="grid h-full">
+<section id="hero" class="overflow-x-hidden flex items-center justify-center pt-[60px] sm:pt-[90px]">
+	<div class="grid min-h-full ">
 		<div
 			class="col-start-1 row-start-1 h-full grid lg:px-20 md:px-12 px-4 w-full box-border justify-center"
 		>
@@ -17,7 +19,7 @@
 				</div>
 			</div>
 			<div
-				class="flex md:flex-row flex-col justify-center sm:items-center w-fit col-start-1 row-start-1 xl:gap-28 lg:gap-20 gap-6"
+				class="flex my-10 md:flex-row flex-col justify-center items-center sm:items-center w-fit col-start-1 row-start-1 xl:gap-28 lg:gap-20 gap-6"
 			>
 				<div class="left-el text-left mx-2 sm:mx-0">
 					<h1

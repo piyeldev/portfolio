@@ -20,11 +20,12 @@ if (typeof window !== 'undefined' && 'IntersectionObserver' in window) {
 				if (executeOnIntersectCallback) {
 					executeOnIntersectCallback();
 				}
-			} else {
-				if (executeOnExitCallback) {
-					executeOnExitCallback();
-				}
-			}
+			} 
+			// else {
+			// 	if (executeOnExitCallback) {
+			// 		executeOnExitCallback();
+			// 	}
+			// }
 		});
 	});
 }

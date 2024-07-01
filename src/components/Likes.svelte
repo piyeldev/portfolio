@@ -17,6 +17,9 @@
 	var length = whoami.length;
 	var i = 0;
 	var speed = 50;
+
+	let scrollHere;
+	let likes;
 	function typewriter() {
 		if (i < length) {
 			typewriteEffect.innerHTML += whoami.charAt(i);
@@ -28,7 +31,7 @@
 	onMount(() => {
 		function onIntersect() {
 			target.classList.add('showTerminal');
-			setTimeout(typewriter, 900);
+			setTimeout(typewriter, 300)
 		}
 		function onExit() {
 			target.classList.remove('showTerminal');
@@ -36,11 +39,23 @@
 		}
 
 		setExecuteOnIntersectCallback(onIntersect);
-		setExecuteOnExitCallback(onExit);
+		// setExecuteOnExitCallback(onExit);
 
 		if (elementToObserve) {
 			observeElement(elementToObserve);
 		}
+
+
+		// GET SCROLL PERCENTAGE OF THIS PAGE
+		document.addEventListener("scroll", (event) => {
+			let scrollPos = scrollHere.getBoundingClientRect().top
+			
+			if (scrollPos < 0) {
+				console.log(Math.round(((-1*scrollPos) / scrollHere.offsetHeight)*100))
+			}
+			
+		})
+
 	});
 
 	onDestroy(() => {
@@ -48,9 +63,9 @@
 	});
 </script>
 
-<section id="likes " class="mt-20 mb-20 flex justify-center">
+<section id="likes " class="mt-20 mb-20 flex justify-center" bind:this={likes}>
 	<div class="sm:mx-20 mx-5">
-		<div class="relative h-[200vh]">
+		<div class="relative h-[500vh]" bind:this={scrollHere}>
 			<div class="sticky top-[25%]">
 				<div class="flex items-center flex-col lg:flex-row lg:gap-16 md:gap-8 gap-2">
 					<div class="left hideTerminal {startClassAdd}" bind:this={target}>
