@@ -27,7 +27,6 @@
   },
   "type": "module",
   "dependencies": {
-    "@sveltejs/enhanced-img": "^0.2.0",
-    "motion": "^10.17.0"
+    "@sveltejs/enhanced-img": "^0.2.0"
   }
 }

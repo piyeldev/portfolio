@@ -1,0 +1,82 @@
+<div class="sticky top-[25%]">
+				<div class="flex items-center flex-col lg:flex-row lg:gap-16 md:gap-8 gap-2">
+					<!-- startClassAdd -->
+					<div class="left hideTerminal " bind:this={target}>
+						<div  class="sm:h-60 h-40 bg-[#343434] rounded-3xl box-border sm:p-6 py-4 px-6">
+							<div class="text-white source-code-pro sm:text-[24px] text-[18px] flex gap-2">
+								<span class="text-[#359006]">~&nbsp;</span>$
+								<div bind:this={typewriteEffect} class=""></div>
+							</div>
+							<div class="source-code-pro-light text-white sm:text-[24px] text-[18px]">
+								Philippines/Cebu/Fiel Franco Atis Degamo
+							</div>
+							<div class="text-white source-code-pro sm:text-[24px] text-[18px]">
+								<span class="text-[#359006]">~&nbsp;</span>$
+							</div>
+						</div>
+					</div>
+
+					<div class="right flex flex-col w-[60%]">
+						<h2 class="">I like</h2>
+						<p class="" bind:this={linux}>Linux and Troubleshooting</p>
+						<p class="text-14px md:text-[16px] lg:text-[18px] p-2 font-light max-w-[780px]" bind:this={linuxSub}>
+							Playing with the app called Termux, and using Pop!_OS as my daily driver, you can expect me to be familliar with linux commands and have sharp troubleshooting skills. 
+							<span class="text-[16px] italic text-[#9b9b9b]">changing and customizing my desktop, then breaking it, then fixing it, yes that's me</span>
+
+						</p>
+
+						<p class="unhighlight" bind:this={mAndm}>Music and Math</p>
+						<p class="text-14px md:text-[16px] lg:text-[18px] p-2 font-light max-w-[780px] hideSub" bind:this={mAndmSub}>
+							Two things I'm passionate about; Math because it challenges me to think critically and find reasons why a problem exists; Music because it brings peace to my mind, and helps to improve my creativity.
+							<span class="text-[16px] italic text-[#9b9b9b]">i mainly like pop, pop rock like in the early 2000s and classical music</span>
+
+						</p>
+						<p class="unhighlight" bind:this={prog}>
+							Designing websites and mobile apps... <br />then bringing them to life
+						</p>
+						<p class="text-14px md:text-[16px] lg:text-[18px] p-2 font-light max-w-[780px] hideSub" bind:this={progSub}>
+							This! I love programming since I was 11 but I wasn't consistent then. Programming improved my patience and my problem solving skills, made me a better at googling things, and overall made my life full of excitement.
+							<span class="text-[16px] italic text-[#9b9b9b]">the first time i head of programming, i thought it was related to arranging events (program), like wedding, birthdays, etc.</span>
+
+						</p>
+					</div>
+				</div>
+			</div>
+
+
+			function animateTransitions(scrollPosition) {
+		console.log(scrollPosition)
+		if (scrollPosition >= 45.55 && scrollPosition <= 75.54) {
+			console.log('pop')
+			setTimeout(() =>{}, 500)
+			linux.classList.toggle('unhighlight');
+			linuxSub.classList.toggle('hideSub');
+
+			
+			mAndm.classList.toggle('unhighlight');
+			mAndmSub.classList.toggle('hideSub');
+		}
+		if (scrollPosition >= 75.55) {
+			console.log('corn')
+			setTimeout(() =>{}, 500)
+			mAndm.classList.toggle('unhighlight');
+			mAndmSub.classList.toggle('hideSub');
+			
+			prog.classList.toggle('unhighlight');
+			progSub.classList.toggle('hideSub');
+		}
+		
+	}
+
+	// GET SCROLL PERCENTAGE OF THIS PAGE
+		document.addEventListener("scroll", (event) => {
+			let scrollPos = scrollHere.getBoundingClientRect().top
+			
+			if (scrollPos < 0) {
+				finalScrollPos = (((-1*scrollPos) / scrollHere.offsetHeight)*100).toFixed(2);
+
+				// console.log(finalScrollPos)
+				animateTransitions(finalScrollPos)
+			}
+			
+		})
