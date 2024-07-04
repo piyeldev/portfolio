@@ -33,7 +33,7 @@ if (typeof window !== 'undefined' && 'IntersectionObserver' in window) {
 				}
 			}
 		});
-	}, {threshold: 1});
+	}, {threshold: 0.5});
 }
 
 // Function to observe an element

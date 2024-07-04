@@ -85,20 +85,24 @@
 	let startClassAdd = '';
 </script>
 
-<section id="likes " class="md:my-20 my-10 w-full">
+<section id="likes " class="md:my-20 mt-5 mb-20 w-full">
 	<div class="sm:mx-20 mx-5">
-		<div class="flex md:justify-center ">
-			<div class="flex items-center justify-center flex-col md:flex-row lg:gap-16 md:gap-8 gap-0">
-				<div class="flex flex-col h-full pb-10  w-[50%]">
-					<div class="left md:sticky fixed top-[25%]">
+		<div class="flex ">
+			<div class="flex justify-center md:items-center items-start flex-col md:flex-row lg:gap-16 md:gap-6 gap-0">
+				<div class="flex flex-col h-full pb-10 md:max-w-[50%] md:min-w-[50%] w-full md:bg-transparent bg-white md:relative sticky top-1">
+					<div class="flex md:hidden gap-2">
+						<span class="text-green-500 no-underline"> ➜</span>
+						<p class="text-xl underline">I Like</p>
+					</div>
+					<div class="left mt-2 md:sticky md:top-[25%] relative">
 						<div class="hideTerminal {startClassAdd}  terminal">
-							<div class="sm:h-60 h-40  bg-[#343434] rounded-3xl box-border py-5 px-5">
-								<div class="text-white source-code-pro sm:text-[24px] text-[18px] flex gap-2">
+							<div class="md:h-60 h-40 bg-[#343434] rounded-3xl box-border py-5 px-5">
+								<div class="text-white source-code-pro lg:text-base text-sm flex gap-2">
 									<span class="text-[#359006]">~</span>$
 									<div bind:this={typewriteEffect} class=""></div>
 								</div>
 								<div class="appearTerm hidden w-full">
-									<div class="source-code-pro-light text-white text-base">
+									<div class="source-code-pro-light text-white lg:text-base text-sm">
 										Philippines/Cebu/Fiel Franco Atis Degamo
 									</div>
 									<div class="text-white source-code-pro sm:text-[24px] text-[18px]">
@@ -110,15 +114,15 @@
 					</div>
 				</div>
 
-				<div class="right flex flex-col min-w-[50%] max-w-[50%]">
-					<div class="flex gap-2 sticky top-10 w-full bg-white">
+				<div class="right flex flex-col md:min-w-[50%] md:max-w-[50%] w-full">
+					<div class="md:flex hidden gap-2 sticky top-10 w-full bg-white">
 						<span class="text-green-500 no-underline"> ➜</span>
 						<p class="text-xl underline">I Like</p>
 					</div>
-					<div class="flex flex-col gap-52">
+					<div class="flex flex-col gap-52 md:mt-0 mt-10">
 						<div class="obsrv" id="linux">
 							<h1 class="heading">Linux and Troubleshooting</h1>
-							<p class="text-14px md:text-[16px] lg:text-[18px] p-2 font-light max-w-[780px]">
+							<p class="text-14px md:text-[16px] lg:text-[18px] p-2 font-light md:max-w-[780px] w-full">
 								Playing with the app called Termux, and using Pop!_OS as my daily driver, you can
 								expect me to be familliar with linux commands and have sharp troubleshooting skills.
 								<span class="text-[16px] italic text-[#9b9b9b]"
@@ -175,6 +179,6 @@
 	}
 
 	.heading {
-		@apply lg:text-4xl md:text-2xl text-xl;
+		@apply lg:text-4xl md:text-2xl text-xl ;
 	}
 </style>
