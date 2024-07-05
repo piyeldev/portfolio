@@ -3,7 +3,7 @@
 	import fiel from '$lib/assets/fiel.png';
 </script>
 
-<section id="footer" class="w-full">
+<section id="footer" class="overflow-hidden">
 	<div
 		class="flex justify-between md:flex-row flex-col lg:pl-10 lg:pr-20 md:px-6 px-4 bg-[#484975] pb-12 text-white"
 	>
@@ -19,7 +19,7 @@
 				<div class="w-fit">
 					<div class=" mt-5 flex md:justify-start justify-center items-center">
 						<img src={fiel} alt="fiel" class="md:size-28 size-24" />
-						<p class=" font-light text-[16px] ml-2 w-48">
+						<p class=" font-light md:text-[16px] text-[14px] ml-2 w-48">
 							I’m a high school student based in Cebu, Philippines, and a web/mobile developer with
 							a passion of creating beautiful designs that will enhance user experience. I’m on my
 							way to be the best of myself and to bring innovative ideas to life.

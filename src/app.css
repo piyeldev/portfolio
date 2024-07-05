@@ -94,7 +94,7 @@ p {
 }
 
 ::-webkit-scrollbar-track {
-	background: transparent;
+	background: none;
 	border-radius: 5px;
 	box-shadow: none;
 }

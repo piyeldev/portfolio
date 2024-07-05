@@ -15,10 +15,8 @@
 	var speed = 100;
 
 	// linux, mathMusic, programming
-	let currentLike = 'linux';
-	let terminal;
-	let mAndm;
-	let prog;
+	let currentLike = 'terminal';
+	
 
 	let appearTerminalElement;
 	onMount(() => {
@@ -32,140 +30,147 @@
 				typewriteEffect.innerHTML += whoami.charAt(i);
 				i++;
 				setTimeout(typewriter, speed);
-			}
-			else if (i === length) {
-				setTimeout(appearTerminalElement.classList.remove('hidden'), 800)
-				
+			} else if (i === length) {
+				setTimeout(appearTerminalElement.classList.remove('hidden'), 800);
 			} else {
-				appearTerminalElement.classList.add('hidden')
+				appearTerminalElement.classList.add('hidden');
 			}
 
 			return;
 		}
 
-		terminal = document.querySelector('.terminal');
 		appearTerminalElement = document.querySelector('.appearTerm');
 
 		setExecuteOnIntersectCallback(() => {
 			currentLike = entryObserved.target.id;
 
-			if (currentLike == 'linux') {
-				terminal.classList.add('showTerminal');
-				// terminal.classList.remove('showmAndm');
-				// terminal.classList.remove('showProg');
+			console.log(currentLike)
 
-				console.log("linux")
+			if (currentLike == 'terminal') {
+				
+
 				setTimeout(typewriter, 300);
 			} else if (currentLike == 'musicMath') {
-				// terminal.classList.add('showmAndm');
-				// typewriteEffect.innerHTML = '';
 			} else if (currentLike == 'programming') {
-				// terminal.classList.remove('showTerminal');
-
 			} else {
 				console.warn('Error in Transitions');
 			}
 		});
 
 		let elementExited;
-		setExecuteOnExitCallback(()=>{
+		setExecuteOnExitCallback(() => {
 			elementExited = entryExited.target.id;
 
-			if (elementExited == 'linux') {
-				appearTerminalElement.classList.add('hidden')
-				terminal.classList.remove('showTerminal');
-				typewriteEffect.innerHTML = ''
-				i=0
+			if (elementExited == 'terminal') {
+				appearTerminalElement.classList.add('hidden');
+				typewriteEffect.innerHTML = '';
+				i = 0;
 			} else {
 				return;
 			}
-		})
+		});
 	});
 
-	let startClassAdd = '';
 </script>
 
-<section id="likes " class="md:my-20 mt-5 mb-20 w-full">
-	<div class="sm:mx-20 mx-5">
-		<div class="flex ">
-			<div class="flex justify-center md:items-center items-start flex-col md:flex-row lg:gap-16 md:gap-6 gap-0">
-				<div class="flex flex-col h-full pb-10 md:max-w-[50%] md:min-w-[50%] w-full md:bg-transparent bg-white md:relative sticky top-1">
-					<div class="flex md:hidden gap-2">
-						<span class="text-green-500 no-underline"> ➜</span>
-						<p class="text-xl underline">I Like</p>
-					</div>
-					<div class="left mt-2 md:sticky md:top-[25%] relative">
-						<div class="hideTerminal {startClassAdd}  terminal">
-							<div class="md:h-60 h-40 bg-[#343434] rounded-3xl box-border py-5 px-5">
-								<div class="text-white source-code-pro lg:text-base text-sm flex gap-2">
-									<span class="text-[#359006]">~</span>$
-									<div bind:this={typewriteEffect} class=""></div>
-								</div>
-								<div class="appearTerm hidden w-full">
-									<div class="source-code-pro-light text-white lg:text-base text-sm">
-										Philippines/Cebu/Fiel Franco Atis Degamo
-									</div>
-									<div class="text-white source-code-pro sm:text-[24px] text-[18px]">
-										<span class="text-[#359006]">~&nbsp;</span>$
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="right flex flex-col md:min-w-[50%] md:max-w-[50%] w-full">
-					<div class="md:flex hidden gap-2 sticky top-10 w-full bg-white">
-						<span class="text-green-500 no-underline"> ➜</span>
-						<p class="text-xl underline">I Like</p>
-					</div>
-					<div class="flex flex-col gap-52 md:mt-0 mt-10">
-						<div class="obsrv" id="linux">
-							<h1 class="heading">Linux and Troubleshooting</h1>
-							<p class="text-14px md:text-[16px] lg:text-[18px] p-2 font-light md:max-w-[780px] w-full">
-								Playing with the app called Termux, and using Pop!_OS as my daily driver, you can
+<div class="likes w-auto  flex justify-center lg:my-16 md:my-10 my-6 lg:mx-10 md:mx-6 mx-4">
+	<div class="flex flex-col justify-center w-full max-w-[1440px]">
+		<h1 class="mainHeading w-full lg:text-4xl md:text-3xl text-xl border-b-blue-600 border-b-4 border-dashed mb-4">About me - I like:</h1>
+		<div class="flex flex-col list gap-40">
+			<div class="troubleshooting flex md:flex-row flex-col-reverse lg:gap-28 gap-6">
+				
+				
+				<div class="flex flex-col gap-1">
+					<div class="heading" >Linux and troubleshooting</div>
+					<p class="sub">
+						Playing with the app called Termux, and using Pop!_OS as my daily driver, you can
 								expect me to be familliar with linux commands and have sharp troubleshooting skills.
 								<span class="text-[16px] italic text-[#9b9b9b]"
 									>changing and customizing my desktop, then breaking it, then fixing it, yes that's
 									me</span
 								>
-							</p>
-						</div>
+					</p>
+				</div>
 
-						<div class="obsrv" id="musicMath">
-							<h1 class="heading">Music and Math</h1>
-							<p class="text-14px md:text-[16px] lg:text-[18px] p-2 font-light max-w-[780px]">
-								Two things I'm passionate about; Math because it challenges me to think critically
-								and find reasons why a problem exists; Music because it brings peace to my mind, and
-								helps to improve my creativity.
-								<span class="text-[16px] italic text-[#9b9b9b]"
-									>i mainly like pop, pop rock like in the early 2000s and classical music</span
-								>
-							</p>
+				<div class="wrapper w-full">
+					<div class="terminal bg-[#343434] lg:max-w-[512px] w-auto lg:p-5 md:p-3 p-2 obsrv h-48 rounded-md">
+						<div class="text-white source-code-pro lg:text-base md:text-sm text-xs flex gap-2">
+							<span class="text-[#359006]">~</span>$
+							<div bind:this={typewriteEffect} class="lg:text-base md:text-sm text-xs">whoami</div>
 						</div>
-						<div class="obsrv" id="programming">
-							<h1 class="heading">
-								Designing websites and mobile apps... <br />then bringing them to life
-							</h1>
-							<p class="text-14px md:text-[16px] lg:text-[18px] p-2 font-light max-w-[780px]">
-								This! I love programming since I was 11 but I wasn't consistent then. Programming
-								improved my patience and my problem solving skills, made me a better at googling
-								things, and overall made my life full of excitement.
-								<span class="text-[16px] italic text-[#9b9b9b]"
-									>the first time i head of programming, i thought it was related to arranging
-									events (program), like wedding, birthdays, etc.</span
-								>
-							</p>
+						<div class="appearTerm w-full">
+							<div class="source-code-pro-light text-white lg:text-base md:text-sm text-xs">
+								Philippines/Cebu/Fiel Franco Atis Degamo
+							</div>
+							<div class="text-white source-code-pro sm:text-[24px] text-[18px]">
+								<span class="text-[#359006]">~&nbsp;</span>$
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="maths flex md:flex-row-reverse flex-col-reverse lg:gap-28 gap-6">
+				<div class="flex flex-col gap-1">
+					<div class="heading" >Music and Math</div>
+					<p class="sub">
+						One of the things i like very much; Math because it challenges me to think critically and
+							find reasons why a problem exists; Music because it brings peace to my mind, and helps
+							to improve my creativity.
+							<span class="text-[16px] italic text-[#9b9b9b]"
+								>i mainly like pop, pop rock like in the early 2000s and classical music</span
+							>
+					</p>
+				</div>
+				<div class="terminal bg-[#343434] lg:p-5 md:p-3 p-2 obsrv h-48 rounded-md">
+					<div class="text-white source-code-pro lg:text-base md:text-sm text-xs flex gap-2">
+						<span class="text-[#359006]">~</span>$
+						<div bind:this={typewriteEffect} class="lg:text-base md:text-sm text-xs">whoami</div>
+					</div>
+					<div class="appearTerm w-full">
+						<div class="source-code-pro-light text-white lg:text-base md:text-sm text-xs">
+							Philippines/Cebu/Fiel Franco Atis Degamo
+						</div>
+						<div class="text-white source-code-pro sm:text-[24px] text-[18px]">
+							<span class="text-[#359006]">~&nbsp;</span>$
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="programming flex md:flex-row flex-col-reverse lg:gap-28 gap-6">
+				<div class="flex flex-col gap-1">
+					<div class="heading" >Designing websites and mobile apps... <br />then bringing them to life</div>
+					<p class="sub">
+						This! I love programming since I was 11 but I wasn't consistent then. Programming
+							improved my patience and my problem solving skills, made me a better at googling
+							things, and overall made my life full of excitement.
+							<span class="text-[16px] italic text-[#9b9b9b]"
+								>the first time i head of programming, i thought it was related to arranging events
+								(program), like wedding, birthdays, etc.</span
+							>
+					</p>
+				</div>
+				<div class="terminal bg-[#343434] lg:p-5 md:p-3 p-2 obsrv h-48 rounded-md">
+					<div class="text-white source-code-pro lg:text-base md:text-sm text-xs flex gap-2">
+						<span class="text-[#359006]">~</span>$
+						<div bind:this={typewriteEffect} class="lg:text-base md:text-sm text-xs">whoami</div>
+					</div>
+					<div class="appearTerm w-full">
+						<div class="source-code-pro-light text-white lg:text-base md:text-sm text-xs">
+							Philippines/Cebu/Fiel Franco Atis Degamo
+						</div>
+						<div class="text-white source-code-pro sm:text-[24px] text-[18px]">
+							<span class="text-[#359006]">~&nbsp;</span>$
+						</div>
+					</div>
+				</div>
+			</div>
+			
 		</div>
 	</div>
-</section>
+</div>
 
 <style lang="postcss">
-
 	.hideTerminal {
 		transform-origin: bottom center;
 		transform: scale(0);
@@ -179,6 +184,10 @@
 	}
 
 	.heading {
-		@apply lg:text-4xl md:text-2xl text-xl ;
+		@apply text-xl font-semibold leading-none;
+	}
+
+	.sub {
+		@apply font-light lg:text-base text-xs
 	}
 </style>

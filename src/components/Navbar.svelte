@@ -10,7 +10,7 @@
 </script>
 
 <div class="flex flex-col">
-	<div class="bg h-[60px] sm:h-[90px] w-[100%] bg-white bg-opacity-[78%] fixed z-50">
+	<div class="bg h-[60px] sm:h-[90px] w-[100%] bg-white bg-opacity-[78%] absolute z-50">
 		<div class="md:mx-10 mx-6 flex items-center justify-between h-full">
 			<a href="/"
 				><img src={fielnobg} alt="logo" class="size-[71px] lg:size-[91px] md:size-[81px]" /></a
@@ -30,7 +30,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="drawer drawerClosed" bind:this={drawerElement}>
+	<div class="drawer drawerClosed absolute w-full" bind:this={drawerElement}>
 		<Drawer />
 	</div>
 </div>
