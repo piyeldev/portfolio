@@ -53,3 +53,10 @@ export function unobserveElement(element) {
 	}
 }
 
+export function disconnectObserver() {
+	if (observer) {
+		observer.disconnect()
+	} else {
+		console.warn('err')
+	}
+}
