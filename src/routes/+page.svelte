@@ -8,7 +8,7 @@
 </script>
 
 <title>fiel.dev</title>
-<div class="">
+<div >
 	<Hero />
 	<Likes />
 	<TechStack />

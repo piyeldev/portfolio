@@ -10,6 +10,8 @@
 	} from '$lib/index';
 
 	import fielInPiano from '$lib/assets/fielOnPiano.png?enhanced';
+	import fielOnComputer from '$lib/assets/fielOnComputer.jpg?enhanced';
+	import fielCodes from '$lib/assets/fielcodes.jpg?enhanced';
 
 	let typewriteEffect;
 	let whoami = 'whoami';
@@ -46,16 +48,9 @@
 
 		setExecuteOnIntersectCallback(() => {
 			currentLike = entryObserved.target.id;
-
-			console.log(currentLike);
-
 			if (currentLike == 'terminal') {
 				setTimeout(typewriter, 300);
-			} else if (currentLike == 'musicMath') {
-			} else if (currentLike == 'programming') {
-			} else {
-				console.warn('Error in Transitions');
-			}
+			} 
 		});
 
 		let elementExited;
@@ -85,7 +80,7 @@
 			About me - I like:
 		</h1>
 		<div class="flex flex-col list gap-40">
-			<div class="troubleshooting flex md:flex-row flex-col-reverse lg:gap-28 gap-6">
+			<div class="troubleshooting hoverHere flex md:flex-row flex-col-reverse lg:gap-28 gap-6">
 				<div class="flex flex-col gap-1">
 					<div class="heading">Linux and troubleshooting</div>
 					<p class="sub">
@@ -97,7 +92,7 @@
 					</p>
 				</div>
 
-				<div class="wrapper w-full inline-block">
+				<div class="wrapper animateThis w-full inline-block">
 					<div class="flex translate-y-2 w-full bg-[#2B313C] pl-2 gap-8 rounded-t-md items-center">
 						<div class="buttons flex gap-2">
 							<div class="buttonX bg-[#BF616A] size-2 rounded-full">
@@ -131,7 +126,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="maths flex md:flex-row-reverse flex-col-reverse lg:gap-28 md:gap-28 gap-6">
+			<div class="maths hoverHere flex md:flex-row-reverse flex-col-reverse lg:gap-28 md:gap-28 gap-6">
 				<div class="flex flex-col gap-1">
 					<div class="heading">Music and Math</div>
 					<p class="sub">
@@ -143,7 +138,7 @@
 						>
 					</p>
 				</div>
-				<div class="showcase w-full">
+				<div class="showcase animateThis w-full">
 					<div class="grid">
 						<div class="row-start-1 col-start-1 ">
 							<div class="polaroid -rotate-12 lg:w-52 md:w-28 w-36">
@@ -152,7 +147,7 @@
 							</div>
 						</div>
 						<div class="row-start-1 col-start-1 ">
-							<div class="polaroid rotate-12 lg:translate-x-32 md:translate-x-20 lg:w-40 w-28">
+							<div class="polaroid rotate-12 lg:translate-x-32 md:translate-x-20 translate-x-24 lg:w-40 w-28">
 								<enhanced:img src={fielInPiano} alt="fiel in piano" class="border-2 border-black " 
 								></enhanced:img>
 							</div>
@@ -161,7 +156,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="programming flex md:flex-row flex-col-reverse lg:gap-28 gap-6">
+			<div class="programming hoverHere flex md:flex-row flex-col-reverse lg:gap-14 gap-6">
 				<div class="flex flex-col gap-1">
 					<div class="heading">
 						Designing websites and mobile apps... <br />then bringing them to life
@@ -176,18 +171,21 @@
 						>
 					</p>
 				</div>
-				<div class=" bg-[#343434] lg:p-5 md:p-3 p-2 obsrv h-48 rounded-md">
-					<div class="text-white source-code-pro lg:text-base md:text-sm text-xs flex gap-2">
-						<span class="text-[#359006]">~</span>$
-						<div class="lg:text-base md:text-sm text-xs">whoami</div>
-					</div>
-					<div class="appearTerm w-full">
-						<div class="source-code-pro-light text-white lg:text-base md:text-sm text-xs">
-							Philippines/Cebu/Fiel Franco Atis Degamo
+				<div class="showcase animateThis w-full lg:-translate-x-4">
+					<div class="grid">
+						<div class="row-start-1 col-start-1 ">
+							<div class="polaroid lg:w-52 md:w-28 w-36">
+								<enhanced:img src={fielOnComputer} alt="fiel in piano" class="border-2 border-black " 
+								></enhanced:img>
+							</div>
 						</div>
-						<div class="text-white source-code-pro sm:text-[24px] text-[18px]">
-							<span class="text-[#359006]">~&nbsp;</span>$
+						<div class="row-start-1 col-start-1 ">
+							<div class="polaroid lg:-translate-y-14 md:translate-y-20 md:translate-x-0 translate-y-4 lg:-translate-x-4  translate-x-24 lg:w-40 w-28">
+								<enhanced:img src={fielCodes} alt="fiel in piano" class="border-2 border-black " 
+								></enhanced:img>
+							</div>
 						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -216,7 +214,7 @@
 		@apply font-light lg:text-base text-xs;
 	}
 
-	.troubleshooting:hover .wrapper {
+	.hoverHere:hover .animateThis {
 		animation-name: float;
 		animation-duration: 5s;
 		animation-iteration-count: infinite;
@@ -228,6 +226,11 @@
 	}
 
 
+	@media prefers-reduced-motion {
+		.hoverHere {
+			animation: none;
+		}
+	}
 	@keyframes float {
 		0% {
 			transform: translateY(0);

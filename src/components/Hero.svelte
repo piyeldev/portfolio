@@ -28,10 +28,17 @@
 						Hi! I'm Fiel
 					</h1>
 					<p class="text-white font-light">I'm a student, young, and passionate</p>
-					<div
-						class="font-bold sm:text-[44px] text-[30px] text-white md:mt-5 mt-0 sm:leading-8 leading-6"
+					<div class="md:mt-5 mt-0 grid">
+						<div
+						class="row-start-1 col-start-1 mobile-app font-bold sm:text-[44px] text-[30px] text-white  sm:leading-8 leading-6"
 					>
 						Mobile App Developer
+					</div>
+					<div
+						class="row-start-1 col-start-1 full-stack font-bold sm:text-[44px] text-[30px] text-white  sm:leading-8 leading-6"
+					>
+						Full Stack Developer
+					</div>
 					</div>
 					<p class="text-white font-light pb-4">
 						- that transforms your ideas into a working magic!
@@ -45,3 +52,52 @@
 		</div>
 	</div>
 </section>
+
+<style lang="postcss">
+	.mobile-app {
+		animation-name: mobile-app-anim;
+		animation-duration: 5s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		transform-origin: right;
+	}
+	.full-stack {
+		animation-name: full-stack-anim;
+		animation-duration: 5s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		transform-origin: left;
+	}
+	@keyframes mobile-app-anim {
+		0% {
+			opacity: 0;
+		}
+		30% {
+			opacity: 1;
+		}
+		60% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 0;
+		}
+
+
+	}
+
+	@keyframes full-stack-anim {
+		0% {
+			opacity: 0;
+		}
+		30% {
+			opacity: 0;
+		}
+		60% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+		
+	}
+</style>

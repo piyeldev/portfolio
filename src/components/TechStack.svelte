@@ -1,10 +1,41 @@
 <script>
 	import Bar from './Bar.svelte';
 	import TechStackItem from './TechStackItem.svelte';
+	import {
+		setExecuteOnExitCallback,
+		setExecuteOnIntersectCallback,
+		observeElement,
+		entryObserved,
+		entryExited,
+		disconnectObserver
+	} from '$lib/index';
+	import { onDestroy, onMount } from 'svelte';
+
+
+	let elementsToObserve;
+	onMount(() => {
+		elementsToObserve = document.querySelectorAll('.obsrve');
+		elementsToObserve.forEach((element) => observeElement(element))
+
+		setExecuteOnIntersectCallback(() => {
+			// console.log("entered!")
+		})
+
+		setExecuteOnExitCallback(() => {
+			// console.log("exited!")
+
+		})
+
+
+	});
+
+	onDestroy(() => {
+		disconnectObserver()
+	})
 </script>
 
-<section id="tech-stack" class=" mb-20 flex justify-center">
-	<div class="w-fit flex flex-col sm:mx-16 mx-5">
+<section id="tech-stack" class="my-40 flex justify-center sm:mx-10 mx-5">
+	<div class="flex flex-col w-full max-w-[1440px]">
 		<h2 class="w-fit sm:text-4xl text-2xl md:leading-normal leading-[1]">
 			Tech Stack & Technologies
 		</h2>
@@ -16,7 +47,7 @@
 			class="grid justify-between lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:flex-row flex-col gap-10 w-fit"
 		>
 			<div class="flex gap-10 md:flex-row flex-col">
-				<div class="tech-stack1-group flex flex-col gap-5 w-fit">
+				<div class="tech-stack1-group obsrve flex flex-col gap-5 w-fit">
 					<TechStackItem title="Web Development" level="20">
 						<img
 							src="https://upload.wikimedia.org/wikipedia/en/e/ec/Bun_JS_logo.png"
@@ -115,3 +146,30 @@
 		</div>
 	</div>
 </section>
+
+
+<style lang="postcss">
+	.tech-stack1-group TechStackItem {
+		/* animation-name: showAndHide;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-iteration-count: 1; */
+
+		border-right: 2px solid black;
+		}
+	@keyframes showAndHide {
+		from {
+			opacity: 0;
+			transform: translateX(-100px);
+		}
+		to {
+			opacity: 1;
+			transform: translateX(0);
+		}
+		/* 100% {
+			opacity: 0;
+			transform: translateX(-10000px);
+		} */
+		
+	}
+</style>
