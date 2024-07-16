@@ -27,6 +27,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@sveltejs/enhanced-img": "^0.2.0"
+    "@sveltejs/enhanced-img": "^0.2.0",
+    "svelte-intersection-observer": "^1.0.0"
   }
 }

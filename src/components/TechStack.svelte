@@ -1,37 +1,7 @@
 <script>
 	import Bar from './Bar.svelte';
 	import TechStackItem from './TechStackItem.svelte';
-	import {
-		setExecuteOnExitCallback,
-		setExecuteOnIntersectCallback,
-		observeElement,
-		entryObserved,
-		entryExited,
-		disconnectObserver
-	} from '$lib/index';
-	import { onDestroy, onMount } from 'svelte';
-
-
-	let elementsToObserve;
-	onMount(() => {
-		elementsToObserve = document.querySelectorAll('.obsrve');
-		elementsToObserve.forEach((element) => observeElement(element))
-
-		setExecuteOnIntersectCallback(() => {
-			// console.log("entered!")
-		})
-
-		setExecuteOnExitCallback(() => {
-			// console.log("exited!")
-
-		})
-
-
-	});
-
-	onDestroy(() => {
-		disconnectObserver()
-	})
+	
 </script>
 
 <section id="tech-stack" class="my-40 flex justify-center sm:mx-10 mx-5">
@@ -148,28 +118,3 @@
 </section>
 
 
-<style lang="postcss">
-	.tech-stack1-group TechStackItem {
-		/* animation-name: showAndHide;
-		animation-duration: 2s;
-		animation-timing-function: linear;
-		animation-iteration-count: 1; */
-
-		border-right: 2px solid black;
-		}
-	@keyframes showAndHide {
-		from {
-			opacity: 0;
-			transform: translateX(-100px);
-		}
-		to {
-			opacity: 1;
-			transform: translateX(0);
-		}
-		/* 100% {
-			opacity: 0;
-			transform: translateX(-10000px);
-		} */
-		
-	}
-</style>

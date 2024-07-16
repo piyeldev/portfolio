@@ -13,12 +13,6 @@
 	import fielOnComputer from '$lib/assets/fielOnComputer.jpg?enhanced';
 	import fielCodes from '$lib/assets/fielcodes.jpg?enhanced';
 
-	let typewriteEffect;
-	let whoami = 'whoami';
-	var length = whoami.length;
-	var i = 0;
-	var speed = 100;
-
 	// linux, mathMusic, programming
 	let currentLike = 'terminal';
 
@@ -29,27 +23,12 @@
 		let obsrvElements = document.querySelectorAll('.obsrv');
 		obsrvElements.forEach((el) => observeElement(el));
 
-		function typewriter() {
-			if (i < length) {
-				typewriteEffect.innerHTML += whoami.charAt(i);
-				i++;
-				setTimeout(typewriter, speed);
-				console.log(typewriteEffect.innerHTML);
-			} else if (i === length) {
-				setTimeout(appearTerminalElement.classList.remove('hidden'), 800);
-			} else {
-				appearTerminalElement.classList.add('hidden');
-			}
-
-			return;
-		}
-
 		appearTerminalElement = document.querySelector('.appearTerm');
 
 		setExecuteOnIntersectCallback(() => {
 			currentLike = entryObserved.target.id;
 			if (currentLike == 'terminal') {
-				setTimeout(typewriter, 300);
+				appearTerminalElement.classList.remove("hidden");
 			} 
 		});
 
@@ -59,7 +38,6 @@
 
 			if (elementExited == 'terminal') {
 				appearTerminalElement.classList.add('hidden');
-				typewriteEffect.innerHTML = '';
 				i = 0;
 			} else {
 				return;
@@ -104,7 +82,7 @@
 						<div
 							class="terminalWindow text-white  text-[16px]"
 						>
-							fiel@fiels-pop-os
+							fiel@computer
 						</div>
 					</div>
 					<div
@@ -113,7 +91,7 @@
 					>
 						<div class="text-white source-code-pro lg:text-base md:text-sm text-xs flex gap-2">
 							<span class="text-[#359006]">~</span>$
-							<div bind:this={typewriteEffect} class="lg:text-base md:text-sm text-xs w-full"></div>
+							<div class="lg:text-base md:text-sm text-xs w-full">whoami</div>
 						</div>
 						<div class="appearTerm w-full">
 							<div class="source-code-pro-light text-white lg:text-base md:text-sm text-[16px]">
@@ -147,7 +125,7 @@
 							</div>
 						</div>
 						<div class="row-start-1 col-start-1 ">
-							<div class="polaroid rotate-12 lg:translate-x-32 md:translate-x-20 translate-x-24 lg:w-40 w-28">
+							<div class="polaroid rotate-12 lg:translate-x-32 translate-x-20 lg:w-40 w-28">
 								<enhanced:img src={fielInPiano} alt="fiel in piano" class="border-2 border-black " 
 								></enhanced:img>
 							</div>
@@ -180,7 +158,7 @@
 							</div>
 						</div>
 						<div class="row-start-1 col-start-1 ">
-							<div class="polaroid lg:-translate-y-14 md:translate-y-20 md:translate-x-0 translate-y-4 lg:-translate-x-4  translate-x-24 lg:w-40 w-28">
+							<div class="polaroid lg:-translate-y-14 md:translate-y-20 md:translate-x-0 translate-y-4 lg:-translate-x-4  translate-x-20 lg:w-40 w-28">
 								<enhanced:img src={fielCodes} alt="fiel in piano" class="border-2 border-black " 
 								></enhanced:img>
 							</div>
