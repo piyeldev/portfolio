@@ -1,5 +1,6 @@
 <script>
 	import image18 from '$lib/assets/image18.png';
+	import { onMount } from 'svelte';
 
 	export let image;
 	export let title;
@@ -7,17 +8,28 @@
 	export let prog;
 	export let repo;
 	export let link;
+
+	export let bg = "#F6B5A8";
+	export let bgTitle = "#4D1E1E";
+
+
+	let backgroundColorOfTitle;
+	let backgroundColor;
+	onMount(() => {
+		backgroundColorOfTitle = bgTitle;
+		backgroundColor = bg;
+	})
 </script>
 
-<div
-	class="card md:px-5 px-4 md:pt-6 pt-4 md:pb-6 pb-4 bg-[#F6B5A8] rounded-2xl card-shadow flex flex-col"
+<div style="background-color: {backgroundColor};"
+	class="flex-shrink-0 hover:scale-105 duration-200 min-w-72 card md:px-5 px-4 md:pt-6 pt-4 md:pb-6 pb-4 rounded-2xl card-shadow flex flex-col"
 >
 	<div class="flex justify-center align-bottom">
 		<div class="grid">
-			<img src={image} alt="header" class="w-fit h-fit row-start-1 col-start-1" />
+			<img src={image} alt="headerIMG" class="w-fit h-full row-start-1 col-start-1" >
 			<div class="row-start-1 col-start-1 flex items-end -mb-4">
-				<h3
-					class="md:text-base text-xs ml-2 bg-[#4D1E1E] px-3 py-2 text-white rounded-xl title-shadow w-fit h-fit"
+				<h3 style="background-color: {backgroundColorOfTitle};"
+					class="md:text-base text-xs ml-2 px-3 py-2 text-white rounded-xl title-shadow w-fit h-fit"
 				>
 					{title}
 				</h3>
@@ -30,6 +42,8 @@
 			<p class="text-white md:text-[18px] text-xs">{desc}</p>
 			{#if prog === 0}
 				<div class="h-5"></div>
+			{:else if prog === 1}
+				<p class="text-[#ffffffc9] text-[14px]">(Delayed &gt;~&lt;)</p>
 			{:else}
 				<p class="text-[#ffffffc9] text-[14px]">(In progress...)</p>
 			{/if}

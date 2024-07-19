@@ -70,7 +70,7 @@
 	}
 	@keyframes mobile-app-anim {
 		0% {
-			opacity: 0;
+			opacity: 0.5;
 		}
 		30% {
 			opacity: 1;
@@ -93,10 +93,10 @@
 			opacity: 0;
 		}
 		60% {
-			opacity: 0;
+			opacity: 1;
 		}
 		100% {
-			opacity: 1;
+			opacity: 0;
 		}
 		
 	}
