@@ -1,12 +1,12 @@
 <script>
 	import ProjectCard from './ProjectCard.svelte';
-	import image18 from '$lib/assets/image18.png';
-	import calculatorImg from '$lib/assets/calculator.png'
+	import image18 from '$lib/assets/image18.png?enhanced';
+	import calculatorImg from '$lib/assets/calculator.png?enhanced'
 </script>
 
-<section id="projects">
-	<div class="bg-[#466C81] flex justify-center max-w-[1440px]">
-		<div class="flex flex-col w-full lg:gap-8 gap-4 pt-4 pb-10">
+<section id="projects" class="bg-[#466C81] text-white">
+	<div class="flex justify-center">
+		<div class="flex flex-col w-full lg:gap-8 gap-4 pt-4 pb-10 max-w-[1440px]">
 			<div
 				class="top-elements w-full flex md:items-center md:gap-6 md:flex-row flex-col lg:px-10 md:px-6 px-4"
 			>
@@ -45,16 +45,18 @@
 					desc="A collection of calculators for math nerds and students"
 					bg="#a9c9f9"
 					bgTitle="#1f324f"
-					><a href="#tech-stack">
-						<div class="technologies text-[14px] underline">
-							My Web Development Stack <i class="fa-solid fa-arrow-up-right-from-square text-[14px]"
-							></i>
-						</div>
-					</a></ProjectCard
+					>
+					<div class="flex gap-2">
+						<img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/>
+						<img width="48" height="48" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>
+						<img width="48" height="48" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>
+						<img width="48" height="48" src="https://img.icons8.com/color/48/bootstrap--v2.png" alt="bootstrap--v2"/>
+					</div>
+					</ProjectCard
 				>
 			</div>
+			<div class="guide lg:hidden flex text-[16px] mx-4">Swipe to see more projects, tap to see detailed information, tap the buttons for links</div>
 		</div>
 	</div>
 </section>
 
-<style lang="postcss"></style>
