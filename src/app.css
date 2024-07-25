@@ -22,6 +22,10 @@ h3 {
 	font-style: normal;
 }
 
+.play-font {
+	font-family: 'Play', sans-serif;
+	font-style: normal;
+}
 img {
 	@apply object-scale-down;
 }

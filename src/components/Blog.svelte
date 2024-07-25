@@ -12,7 +12,7 @@
 				</a>
 			</div>
 			<div class="flex text-center h-full justify-center items-center text-[#ac6969] text-2xl">
-				Hello World!<br />Blog's coming soon! &lt;3
+				Coming soon in fiel.blog!
 			</div>
 		</div>
 	</div>

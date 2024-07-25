@@ -18,10 +18,10 @@
 			
 			<div class="flex lg:gap-12 gap-6 items-center">
 				<nav class=" lg:gap-12 gap-6 md:flex flex-row group items-center hidden">
-					<a href="#hero" class="nav-font-size hover:text-[#425E88]">About</a>
-					<a href="#projects" class="nav-font-size hover:text-[#466C81]">Projects</a>
-					<a href="#blog" class="nav-font-size hover:text-[#7C3737]">Blog</a>
-					<a href="#contact" class="nav-font-size hover:animate-pulse hover:text-red-400">Contact</a>
+					<a href="/#hero" class="nav-font-size hover:text-[#425E88]">About</a>
+					<a href="/#projects" class="nav-font-size hover:text-[#466C81]">Projects</a>
+					<a href="/#blog" class="nav-font-size hover:text-[#7C3737]">Blog</a>
+					<a href="/contact" class="nav-font-size hover:animate-pulse hover:text-red-400">Contact</a>
 				</nav>
 				<div class="md:hidden flex justify-center">
 					<a href="/" on:click={drawerOnClick} class="px-2 rounded-full hover:bg-[#00000034]"
