@@ -21,7 +21,7 @@
 					mentioned above.
 				</p>
 			</div>
-			<div class="flex overflow-x-scroll gap-4 md:p-4 p-2 lg:ml-10 md:ml-6 ml-4">
+			<div class="flex overflow-x-scroll gap-4 md:p-4 p-2 lg:ml-10 md:ml-6 ml-0">
 				<ProjectCard
 					image={image18}
 					title="Website Portfolio"

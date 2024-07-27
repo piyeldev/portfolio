@@ -24,19 +24,19 @@
 					<p class="footerSubs">View latest tutorials from fiel</p>
 				</div>
 			</div>
-		</div>
+		</div>md:text-[18px] text-[16px]
 
 		<div class="footer-nav-item flex flex-col gap-6 mb-4 mt-6 lg:ml-4 ml-0">
 			<div class="about max-w-56">
-				<a href="#hero"><h3 class="heading">About</h3></a>
+				<a href="/#hero"><h3 class="heading">About</h3></a>
 				<p class="sub">Learn about Fiel's skills and tech stack.</p>
 			</div>
 			<div class="projects max-w-56">
-				<a href="#projects"><h3 class="heading">Projects</h3></a>
+				<a href="/#projects"><h3 class="heading">Projects</h3></a>
 				<p class="sub">View Fiel's previous works.</p>
 			</div>
 			<div class="blog max-w-56">
-				<a href="#blog"><h3 class="heading">Blog</h3></a>
+				<a href="/#blog"><h3 class="heading">Blog</h3></a>
 				<p class="sub bg-[#484975]">Read his articles about programming, tutorials, and hobbies.</p>
 			</div>
 		</div>
