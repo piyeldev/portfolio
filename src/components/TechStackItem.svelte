@@ -7,7 +7,7 @@
 	
 </script>
 
-	<div class="tech-stack">
+	<div class="tech-stackgio">
 		<Bar progress={level} />
 		<h3 class="hd">{title}</h3>
 		<p class="text-[#8d8d8d] sm:text-[21px] text-18px leading-[10px]">Confidence Level {level}%</p>

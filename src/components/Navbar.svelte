@@ -24,8 +24,8 @@
 					<a href="/contact" class="nav-font-size hover:animate-pulse hover:text-red-400">Contact</a>
 				</nav>
 				<div class="md:hidden flex justify-center">
-					<a href="/" on:click={drawerOnClick} class="px-2 rounded-full hover:bg-[#00000034]"
-						><i class="fa-solid fa-bars"></i></a
+					<button on:click={drawerOnClick} class="px-2 rounded-full hover:bg-[#00000034]"
+						><i class="fa-solid fa-bars"></i></button
 					>
 				</div>
 				<a href="https://github.com/piyeldev" class=" " target="_blank">

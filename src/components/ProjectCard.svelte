@@ -59,7 +59,7 @@
 			<a target="_blank" href={repo}><i class="fa-solid fa-code text-white text-2xl"></i></a>
 		</div>
 	</div>
-	<div class="h-full flex items-end">
+	<div class="h-full flex items-end md:justify-start justify-end">
 		<div class="flex flex-col">
 			<h3
 			class="md:inline-block hidden text-white md:mt-0 mt-2 text-sm md:text-base md:ml-3 leading-4 md:leading-normal"

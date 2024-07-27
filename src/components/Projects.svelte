@@ -21,7 +21,7 @@
 					mentioned above.
 				</p>
 			</div>
-			<div class="flex overflow-x-scroll gap-4 md:p-4 p-2 lg:ml-10 md:ml-6 ml-0">
+			<div class="flex overflow-x-scroll gap-4 md:p-4 p-2 lg:ml-10 md:ml-6 ml-2">
 				<ProjectCard
 					image={image18}
 					title="Website Portfolio"
@@ -55,7 +55,7 @@
 					</ProjectCard
 				>
 			</div>
-			<div class="guide lg:hidden flex text-[16px] mx-4">Swipe to see more projects, tap to see detailed information, tap the buttons for links</div>
+			<div class="guide lg:hidden flex text-[16px] mx-4">Swipe to see more projects, tap to see detailed information, tap the icons for links</div>
 		</div>
 	</div>
 </section>

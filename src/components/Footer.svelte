@@ -24,7 +24,7 @@
 					<p class="footerSubs">View latest tutorials from fiel</p>
 				</div>
 			</div>
-		</div>md:text-[18px] text-[16px]
+		</div>
 
 		<div class="footer-nav-item flex flex-col gap-6 mb-4 mt-6 lg:ml-4 ml-0">
 			<div class="about max-w-56">

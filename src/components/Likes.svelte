@@ -68,10 +68,10 @@
 				<div class="flex flex-col gap-1">
 					<div class="heading">Linux and troubleshooting</div>
 					<p class="sub">
-						Playing with the app called Termux, and using Pop!_OS as my daily driver, you can expect
+						Playing with the app called Termux, and using <s class="sub">Pop!_OS</s> Arch Linux as my daily driver, you can expect
 						me to be familliar with linux commands and have sharp troubleshooting skills.
 						<span class="text-[16px] italic text-[#9b9b9b]"
-							>changing and customizing my desktop, then breaking it, then fixing it, yes that's me</span
+							><s class="text-[16px] italic text-[#9b9b9b]">changing and customizing my desktop, then breaking it, then fixing it,</s> distro hopper? yes that's me. but the hop is over since i use arch btw</span
 						>
 					</p>
 				</div>
@@ -101,7 +101,7 @@
 						</div>
 						<div class="appearTerm w-full">
 							<div class="source-code-pro-light text-white lg:text-base md:text-sm text-[16px]">
-								Philippines/Cebu/Fiel Franco Atis Degamo
+								fiel
 							</div>
 							<div class="text-white source-code-pro sm:text-[24px] text-[18px]">
 								<span class="text-[#359006]">~&nbsp;</span>$
