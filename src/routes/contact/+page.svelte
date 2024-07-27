@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from "svelte";
-    import accessKey from "/src/IMPORTANT_AND_DANGEROUS/api_key.txt?raw";
+    import accessKey from "/src/secrets/api_key.txt";
 
     function copyEmail() {
         navigator.clipboard.writeText("frankthecrafter23@gmail.com");
