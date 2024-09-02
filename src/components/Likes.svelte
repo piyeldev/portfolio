@@ -1,53 +1,8 @@
 <script>
-	import { onDestroy, onMount } from 'svelte';
-	import {
-		setExecuteOnExitCallback,
-		setExecuteOnIntersectCallback,
-		observeElement,
-		entryObserved,
-		entryExited,
-		disconnectObserver
-	} from '$lib/index';
-
 	import fielInPiano from '$lib/assets/fielOnPiano.png?enhanced';
 	import fielOnComputer from '$lib/assets/fielOnComputer.jpg?enhanced';
 	import fielCodes from '$lib/assets/fielcodes.jpg?enhanced';
 
-	// linux, mathMusic, programming
-	let currentLike = 'terminal';
-
-	let appearTerminalElement;
-	onMount(() => {
-		let i = 0;
-		let n = 1;
-		let obsrvElements = document.querySelectorAll('.obsrv');
-		obsrvElements.forEach((el) => observeElement(el));
-
-		appearTerminalElement = document.querySelector('.appearTerm');
-
-		setExecuteOnIntersectCallback(() => {
-			currentLike = entryObserved.target.id;
-			if (currentLike == 'terminal') {
-				appearTerminalElement.classList.remove("hidden");
-			} 
-		});
-
-		let elementExited;
-		setExecuteOnExitCallback(() => {
-			elementExited = entryExited.target.id;
-
-			if (elementExited == 'terminal') {
-				appearTerminalElement.classList.add('hidden');
-				i = 0;
-			} else {
-				return;
-			}
-		});
-	});
-
-	onDestroy(() => {
-		disconnectObserver();
-	});
 </script>
 
 <div class="heartbg absolute -z-10 right-0 translate-y-8 overflow-hidden">
@@ -178,17 +133,7 @@
 </div>
 
 <style lang="postcss">
-	.hideTerminal {
-		transform-origin: bottom center;
-		transform: scale(0);
-		transition: 300ms transform;
-	}
-	.showTerminal {
-		transform: scale(1);
-	}
-	.hideSub {
-		@apply hidden;
-	}
+	
 
 	.heading {
 		@apply text-xl font-semibold leading-none;

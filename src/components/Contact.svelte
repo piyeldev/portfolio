@@ -23,9 +23,3 @@
 	</div>
 </section>
 
-
-<style lang="postcss">
-	.social-item {
-		@apply flex gap-1 items-center;
-	}
-</style>

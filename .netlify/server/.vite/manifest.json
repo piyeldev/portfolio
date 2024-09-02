@@ -1,0 +1,214 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "name": "internal",
+    "src": ".svelte-kit/generated/server/internal.js",
+    "isEntry": true,
+    "imports": [
+      "_internal.js"
+    ]
+  },
+  "_exports.js": {
+    "file": "chunks/exports.js",
+    "name": "exports"
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "name": "internal",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "_ssr.js": {
+    "file": "chunks/ssr.js",
+    "name": "ssr"
+  },
+  "calculator.avif": {
+    "file": "_app/immutable/assets/calculator.CzP9CLlh.avif",
+    "src": "calculator.avif"
+  },
+  "calculator.png": {
+    "file": "_app/immutable/assets/calculator.C-tzghoL.png",
+    "src": "calculator.png"
+  },
+  "calculator.webp": {
+    "file": "_app/immutable/assets/calculator.DUCgAG8o.webp",
+    "src": "calculator.webp"
+  },
+  "fiel-white.avif": {
+    "file": "_app/immutable/assets/fiel-white.BodmBTYd.avif",
+    "src": "fiel-white.avif"
+  },
+  "fiel-white.png": {
+    "file": "_app/immutable/assets/fiel-white.DqDWLetn.png",
+    "src": "fiel-white.png"
+  },
+  "fiel-white.webp": {
+    "file": "_app/immutable/assets/fiel-white.BopTYCPi.webp",
+    "src": "fiel-white.webp"
+  },
+  "fielOnComputer.avif": {
+    "file": "_app/immutable/assets/fielOnComputer.wd14E0L7.avif",
+    "src": "fielOnComputer.avif"
+  },
+  "fielOnComputer.jpeg": {
+    "file": "_app/immutable/assets/fielOnComputer.B8Kb9h0K.jpeg",
+    "src": "fielOnComputer.jpeg"
+  },
+  "fielOnComputer.webp": {
+    "file": "_app/immutable/assets/fielOnComputer.B_bjJeSE.webp",
+    "src": "fielOnComputer.webp"
+  },
+  "fielOnPiano.avif": {
+    "file": "_app/immutable/assets/fielOnPiano.CF1HaQ39.avif",
+    "src": "fielOnPiano.avif"
+  },
+  "fielOnPiano.png": {
+    "file": "_app/immutable/assets/fielOnPiano.C_P32oi4.png",
+    "src": "fielOnPiano.png"
+  },
+  "fielOnPiano.webp": {
+    "file": "_app/immutable/assets/fielOnPiano.CqLBKTZB.webp",
+    "src": "fielOnPiano.webp"
+  },
+  "fielcodes.avif": {
+    "file": "_app/immutable/assets/fielcodes.BnYCyGu9.avif",
+    "src": "fielcodes.avif"
+  },
+  "fielcodes.jpeg": {
+    "file": "_app/immutable/assets/fielcodes.DVf6WwXO.jpeg",
+    "src": "fielcodes.jpeg"
+  },
+  "fielcodes.webp": {
+    "file": "_app/immutable/assets/fielcodes.tg7IRsU5.webp",
+    "src": "fielcodes.webp"
+  },
+  "image18.avif": {
+    "file": "_app/immutable/assets/image18.Bf02axc6.avif",
+    "src": "image18.avif"
+  },
+  "image18.png": {
+    "file": "_app/immutable/assets/image18.BRYdX-LE.png",
+    "src": "image18.png"
+  },
+  "image18.webp": {
+    "file": "_app/immutable/assets/image18.BjpYr_en.webp",
+    "src": "image18.webp"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "name": "entries/fallbacks/error.svelte",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_exports.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "name": "index",
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
+    "isEntry": true,
+    "imports": [
+      "_internal.js",
+      "_exports.js",
+      "_ssr.js"
+    ]
+  },
+  "src/lib/assets/fiel-nobg.png": {
+    "file": "_app/immutable/assets/fiel-nobg.DkEO1G6u.png",
+    "src": "src/lib/assets/fiel-nobg.png"
+  },
+  "src/lib/assets/fiel.png": {
+    "file": "_app/immutable/assets/fiel.DxpZArF7.png",
+    "src": "src/lib/assets/fiel.png"
+  },
+  "src/lib/assets/heroBg.png": {
+    "file": "_app/immutable/assets/heroBg.kuDjiYBJ.png",
+    "src": "src/lib/assets/heroBg.png"
+  },
+  "src/lib/assets/img.png": {
+    "file": "_app/immutable/assets/img.BMIX_Qyq.png",
+    "src": "src/lib/assets/img.png"
+  },
+  "src/routes/+layout.svelte": {
+    "file": "entries/pages/_layout.svelte.js",
+    "name": "entries/pages/_layout.svelte",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout.BVpkxw-d.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/fiel-nobg.DkEO1G6u.png",
+      "_app/immutable/assets/fiel-white.BVb3U5WN.avif",
+      "_app/immutable/assets/fiel-white.BodmBTYd.avif",
+      "_app/immutable/assets/fiel-white.DkMznJr2.webp",
+      "_app/immutable/assets/fiel-white.BopTYCPi.webp",
+      "_app/immutable/assets/fiel-white.Ce__ylCL.png",
+      "_app/immutable/assets/fiel-white.DqDWLetn.png",
+      "_app/immutable/assets/heroBg.kuDjiYBJ.png"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "entries/pages/_page.svelte.js",
+    "name": "entries/pages/_page.svelte",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.BdMAYOaf.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/img.BMIX_Qyq.png",
+      "_app/immutable/assets/fielOnPiano.BBf3H75o.avif",
+      "_app/immutable/assets/fielOnPiano.CF1HaQ39.avif",
+      "_app/immutable/assets/fielOnPiano.tpcNh11D.webp",
+      "_app/immutable/assets/fielOnPiano.CqLBKTZB.webp",
+      "_app/immutable/assets/fielOnPiano.BVHfIpz9.png",
+      "_app/immutable/assets/fielOnPiano.C_P32oi4.png",
+      "_app/immutable/assets/fielOnComputer.IwJtrVZT.avif",
+      "_app/immutable/assets/fielOnComputer.wd14E0L7.avif",
+      "_app/immutable/assets/fielOnComputer.JwbeR1Bn.webp",
+      "_app/immutable/assets/fielOnComputer.B_bjJeSE.webp",
+      "_app/immutable/assets/fielOnComputer.CeZ7CVHB.jpeg",
+      "_app/immutable/assets/fielOnComputer.B8Kb9h0K.jpeg",
+      "_app/immutable/assets/fielcodes.DMn0RJp6.avif",
+      "_app/immutable/assets/fielcodes.BnYCyGu9.avif",
+      "_app/immutable/assets/fielcodes.BNZeE0ZA.webp",
+      "_app/immutable/assets/fielcodes.tg7IRsU5.webp",
+      "_app/immutable/assets/fielcodes.BVi4Iib2.jpeg",
+      "_app/immutable/assets/fielcodes.DVf6WwXO.jpeg",
+      "_app/immutable/assets/image18.QOP1mP8l.avif",
+      "_app/immutable/assets/image18.Bf02axc6.avif",
+      "_app/immutable/assets/image18.DL0T4mzy.webp",
+      "_app/immutable/assets/image18.BjpYr_en.webp",
+      "_app/immutable/assets/image18.C2aGBEl5.png",
+      "_app/immutable/assets/image18.BRYdX-LE.png",
+      "_app/immutable/assets/calculator.BS3IxoAu.avif",
+      "_app/immutable/assets/calculator.CzP9CLlh.avif",
+      "_app/immutable/assets/calculator.C5urR1iV.webp",
+      "_app/immutable/assets/calculator.DUCgAG8o.webp",
+      "_app/immutable/assets/calculator.DJBM1GAu.png",
+      "_app/immutable/assets/calculator.C-tzghoL.png"
+    ]
+  },
+  "src/routes/contact/+page.svelte": {
+    "file": "entries/pages/contact/_page.svelte.js",
+    "name": "entries/pages/contact/_page.svelte",
+    "src": "src/routes/contact/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.D5YIustG.css"
+    ]
+  }
+}

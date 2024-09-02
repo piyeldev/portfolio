@@ -1,5 +1,4 @@
 <script>
-	import { onMount } from "svelte";
     import accessKey from "/src/secrets/api_key.txt?raw";
 
     function copyEmail() {

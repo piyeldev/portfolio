@@ -44,7 +44,5 @@
 		transition: 300ms transform;
 		transform: scaleY(0);
 	}
-	.openDrawer {
-		transform: scaleY(1);
-	}
+	
 </style>

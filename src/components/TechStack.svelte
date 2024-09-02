@@ -1,5 +1,4 @@
 <script>
-	import Bar from './Bar.svelte';
 	import TechStackItem from './TechStackItem.svelte';
 	
 </script>
