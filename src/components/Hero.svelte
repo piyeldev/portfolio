@@ -1,12 +1,12 @@
 <script>
-	import heroBg from '$lib/assets/heroBg.png';
+	import heroBg from '$lib/assets/heroBg.avif';
 	import img from '$lib/assets/img.png';
 	import GetInTouchBtn from './GetInTouchBtn.svelte';
 
 	
 </script>
 
-<section id="hero" class="overflow-x-hidden flex items-center justify-center pt-[60px] sm:pt-[90px]">
+<section style="background-image: url({heroBg}); background-size: cover;" id="hero" class="relative overflow-x-hidden flex items-center justify-center pt-[60px] sm:pt-[90px]">
 	<div class="grid min-h-full ">
 		<div
 			class="col-start-1 row-start-1 h-full grid lg:px-20 md:px-12 px-4 w-full box-border justify-center"

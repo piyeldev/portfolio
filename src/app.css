@@ -127,6 +127,6 @@ p {
 }
 
 #hero {
-	background-image: url('lib/assets/heroBg.png');
+	background-image: url('lib/assets/heroBg.avif');
 	background-size: cover;
 }

@@ -27,16 +27,19 @@
 						<img
 							src="https://upload.wikimedia.org/wikipedia/en/e/ec/Bun_JS_logo.png"
 							alt="bun"
+							loading="lazy"
 							class="sm:w-[80px] w-[60px] h-auto"
 						/>
 						<img
 							src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/1200px-Svelte_Logo.svg.png"
 							alt="svelte"
+							loading="lazy"
 							class="w-auto sm:h-[80px] h-[60px]"
 						/>
 						<img
 							src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
 							alt="tailwind css"
+							loading="lazy"
 							class="sm:w-[110px] w-[60px] h-auto"
 						/>
 					</TechStackItem>
@@ -44,11 +47,13 @@
 						<img
 							src="https://raw.githubusercontent.com/flutter/website/master/src/_assets/image/flutter-logomark-320px.png"
 							alt="flutter"
+							loading="lazy"
 							class="w-auto sm:h-[80px] h-[60px]"
 						/>
 						<img
 							src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Dart_programming_language_logo_icon.svg/2048px-Dart_programming_language_logo_icon.svg.png"
 							alt="dart (programming language)"
+							loading="lazy"
 							class="w-auto sm:h-[80px] h-[60px]"
 						/>
 					</TechStackItem>
@@ -56,10 +61,12 @@
 						<img
 							src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1200px-Figma-logo.svg.png"
 							alt="figma"
+							loading="lazy"
 							class="w-auto sm:h-[80px] h-[60px]"
 						/><img
 							src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Canva_icon_2021.svg/2048px-Canva_icon_2021.svg.png"
 							alt="canva"
+							loading="lazy"
 							class="w-auto sm:h-[80px] h-[60px]"
 						/>
 					</TechStackItem>
@@ -71,6 +78,7 @@
 					<img
 						src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/640px-Python-logo-notext.svg.png"
 						alt="python"
+						loading="lazy"
 						class="w-auto sm:h-[130px] h-[110px]"
 					/>
 				</div>
@@ -83,16 +91,19 @@
 							<img
 								src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Visual_Studio_Code_1.35_icon.png"
 								alt="vscode"
+								loading="lazy"
 								class="w-auto sm:h-[80px] h-[60px]"
 							/>
 							<img
 								src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Android_Studio_Logo_%282023%29.svg/1200px-Android_Studio_Logo_%282023%29.svg.png"
 								alt="android studio"
+								loading="lazy"
 								class="w-auto sm:h-[80px] h-[60px]"
 							/>
 							<img
 								src="https://avatars.githubusercontent.com/u/18133?s=280&v=4"
 								alt="git"
+								loading="lazy"
 								class="w-auto sm:h-[80px] h-[60px]"
 							/>
 						</div>
@@ -100,20 +111,24 @@
 							<img
 								src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1200px-GitHub_Invertocat_Logo.svg.png"
 								alt="github"
+								loading="lazy"
 								class="w-auto sm:h-[80px] h-[60px]"
 							/>
 							<img
 								src="https://i.redd.it/tu3gt6ysfxq71.png"
 								alt="unity"
+								loading="lazy"
 								class="w-auto sm:h-[80px] h-[60px]"
 							/>
 						</div>
 						<div class="container flex mt-24">
-							<img
+							
+							<!-- <img
 								src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Godot_icon.svg/1200px-Godot_icon.svg.png"
 								alt="godot"
+								loading="lazy"
 								class="w-auto sm:h-[80px] h-[60px]"
-							/>
+							/> -->
 						</div>
 					</div>
 				</div>
