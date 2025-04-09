@@ -39,7 +39,7 @@
 	</div>
 </div>
 
-<style lang="postcss">
+<style  >
 	.drawerClosed {
 		transition: 300ms transform;
 		transform: scaleY(0);

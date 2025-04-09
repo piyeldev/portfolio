@@ -53,7 +53,7 @@
 	</div>
 </section>
 
-<style lang="postcss">
+<style  >
 	.mobile-app {
 		animation-name: mobile-app-anim;
 		animation-duration: 5s;

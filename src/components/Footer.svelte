@@ -64,7 +64,9 @@
 	</div>
 </section>
 
-<style lang="postcss">
+<style lang="css">
+	@reference "../app.css";
+
 	.footer-nav-item .heading {
 		@apply text-base;
 	}

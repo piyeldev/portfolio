@@ -7,7 +7,7 @@
     </nav>
 </div>
 
-<style lang="postcss">
+<style  >
     .nav a {
         border-bottom: 1px solid black;
         padding-bottom: 4px;

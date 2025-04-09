@@ -1,6 +1,7 @@
 import { enhancedImages } from '@sveltejs/enhanced-img';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
 	server: {
@@ -9,5 +10,5 @@ export default defineConfig({
 		  allow: ['..'],
 		},
 	  },
-	plugins: [enhancedImages(), sveltekit()]
+	plugins: [enhancedImages(), sveltekit(), tailwindcss()]
 });

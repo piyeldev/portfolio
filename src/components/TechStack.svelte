@@ -11,7 +11,7 @@
 </div>
 <section id="tech-stack" class="my-40 flex justify-center sm:mx-10 mx-5">
 	<div class="flex flex-col w-full max-w-[1440px]">
-		<h2 class="w-fit sm:text-4xl text-2xl md:leading-normal leading-[1]">
+		<h2 class="w-fit sm:text-4xl text-2xl md:leading-normal leading-none">
 			Tech Stack & Technologies
 		</h2>
 		<p class="mb-6 w-fit sm:mt-0 mt-2">

@@ -25,7 +25,7 @@
 </script>
 
 <div style="background-color: {backgroundColor};"
-	class="flex-shrink-0 hover:scale-105 duration-200 w-fit h-auto md:px-5 px-3 md:pt-6 md:pb-6 py-3 rounded-2xl card-shadow flex flex-col"
+	class="shrink-0 hover:scale-105 duration-200 w-fit h-auto md:px-5 px-3 md:pt-6 md:pb-6 py-3 rounded-2xl card-shadow flex flex-col"
 >
 	<div class="flex justify-center align-bottom">
 		<div class="grid">

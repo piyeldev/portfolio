@@ -59,7 +59,7 @@
     </div>
 </div>
 
-<style lang="postcss">
+<style  >
     .form-group {
         @apply flex flex-col;
     }

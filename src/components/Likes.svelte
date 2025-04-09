@@ -132,8 +132,8 @@
 	</div>
 </div>
 
-<style lang="postcss">
-	
+<style lang="css">
+	@reference "../app.css";
 
 	.heading {
 		@apply text-xl font-semibold leading-none;
