@@ -1,3 +1,0 @@
-[submodule "src/secrets"]
-	path = src/secrets
-	url = git@github.com:piyeldev/web3forms-secrets.git
