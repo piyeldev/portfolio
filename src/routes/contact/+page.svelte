@@ -1,5 +1,5 @@
 <script>
-    import accessKey from "/src/secrets/api_key.txt?raw";
+    var accessKey = import.meta.env.VITE_WEB3_FORMS_API_KEY
 
     function copyEmail() {
         navigator.clipboard.writeText("frankthecrafter23@gmail.com");
