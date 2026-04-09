@@ -4,3 +4,13 @@
 Feel free to inspect/use this as your inspiration, i'm happy to help!
 
 
+## TODO
+
+1. make the hero heading proper and all the other headings in pages
+2. Update your current specializes
+3. Put location in hero
+4. make the navbar smaller, its too big
+5. remove the github button - done
+6. Add Qt in your techstack
+7. Arrange techstack in a calm manner, arranged horizontally and linearly, with a small information of what it is
+

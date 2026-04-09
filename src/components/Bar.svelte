@@ -2,7 +2,7 @@
 	/**
 	 * @param 0-100
 	 */
-	export let progress;
+	const { progress, } = $props()
 </script>
 
 <div class="back  h-[8px] bg-[#e1e1e1] rounded-[10px] w-full">

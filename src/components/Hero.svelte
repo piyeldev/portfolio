@@ -23,7 +23,7 @@
 			>
 				<div class="left-el text-left mx-2 sm:mx-0">
 					<h1
-						class="header text-white xl:text-[70px] lg:text-[60px] md:text-[50px] text-[40px] leading-8 md:leading-10"
+						class="text-white text-4xl"
 					>
 						Hi! I'm Fiel
 					</h1>
@@ -53,7 +53,7 @@
 	</div>
 </section>
 
-<style  >
+<style>
 	.mobile-app {
 		animation-name: mobile-app-anim;
 		animation-duration: 5s;

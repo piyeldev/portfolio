@@ -64,8 +64,14 @@
 							loading="lazy"
 							class="w-auto sm:h-[80px] h-[60px]"
 						/><img
-							src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Canva_icon_2021.svg/2048px-Canva_icon_2021.svg.png"
+							src="https://public.canva.site/logo/media/dfb96cc174513093cd6ed61489ccb750.svg"
 							alt="canva"
+							loading="lazy"
+							class="w-auto sm:h-[80px] h-[60px]"
+						/>
+						<img
+							src="https://static-00.iconduck.com/assets.00/penpot-icon-408x512-dwt4p7sy.png"
+							alt="penpot"
 							loading="lazy"
 							class="w-auto sm:h-[80px] h-[60px]"
 						/>

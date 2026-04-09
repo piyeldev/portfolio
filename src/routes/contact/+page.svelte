@@ -59,7 +59,9 @@
     </div>
 </div>
 
-<style  >
+<style lang="css">
+    @reference '../../app.css';
+
     .form-group {
         @apply flex flex-col;
     }

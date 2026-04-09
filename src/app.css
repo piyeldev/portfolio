@@ -4,6 +4,8 @@ layer(base);
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@300;400&display=swap')
 layer(base);
 
+@config '../tailwind.config.js';
+
 @import 'tailwindcss';
 
 /*
@@ -39,12 +41,12 @@ h2,
 h3 {
 	font-family: 'Play', sans-serif;
 	font-weight: 700;
-	font-style: normal;
+	/* font-style: normal; */
 }
 
 .play-font {
 	font-family: 'Play', sans-serif;
-	font-style: normal;
+	/* font-style: normal; */
 }
 img {
 	@apply object-scale-down;
@@ -63,14 +65,14 @@ p {
 	font-family: 'Source Code Pro', monospace;
 	font-optical-sizing: auto;
 	font-weight: 400;
-	font-style: normal;
+	/* font-style: normal; */
 }
 
 .source-code-pro-light {
 	font-family: 'Source Code Pro', monospace;
 	font-optical-sizing: auto;
 	font-weight: 300;
-	font-style: normal;
+	/* font-style: normal; */
 }
 .wrapper {
 	width: 100%;
@@ -80,8 +82,8 @@ p {
 	font-family: 'Space Grotesk', sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
-	font-style: normal;
-	font-size: 24px;
+	/* font-style: normal; */
+	/* font-size: 24px; */
 
 	scroll-behavior: smooth;
 }
@@ -90,14 +92,14 @@ p {
 	font-family: 'Space Grotesk', sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
-	font-style: normal;
+	/* font-style: normal; */
 }
 
 .space-font-bold {
 	font-family: 'Space Grotesk', sans-serif;
 	font-optical-sizing: auto;
 	font-weight: bold;
-	font-style: normal;
+	/* font-style: normal; */
 }
 .animate-enlarge {
 	transition: transform 0.3s;

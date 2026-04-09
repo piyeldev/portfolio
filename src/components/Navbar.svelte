@@ -24,13 +24,10 @@
 					<a href="/contact" class="nav-font-size hover:animate-pulse hover:text-red-400">Contact</a>
 				</nav>
 				<div class="md:hidden flex justify-center">
-					<button on:click={drawerOnClick} class="px-2 rounded-full hover:bg-[#00000034]"
+					<button aria-label="navigation button" onclick={drawerOnClick} class="px-2 rounded-full hover:bg-[#00000034]"
 						><i class="fa-solid fa-bars"></i></button
 					>
 				</div>
-				<a href="https://github.com/piyeldev" class=" " target="_blank">
-					<i class="fa-brands fa-github md:text-3xl text-2xl animate-enlarge "></i>
-				</a>
 			</div>
 		</div>
 	</div>

@@ -8,7 +8,7 @@
 </script>
 
 <title>fiel.dev</title>
-<div >
+<div class="min-h-screen">
 	<Hero />
 	<Likes />
 	<TechStack />

@@ -2,6 +2,8 @@
 	import ProjectCard from './ProjectCard.svelte';
 	import image18 from '$lib/assets/image18.png?enhanced';
 	import calculatorImg from '$lib/assets/calculator.png?enhanced'
+
+	const {} = $props()
 </script>
 
 <section id="projects" class="bg-[#466C81] text-white">
